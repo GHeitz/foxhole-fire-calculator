@@ -1,1 +1,22 @@
-
+[
+    {
+        "id": "clear",
+        "name": "Clear Weather",
+        "fireModifier": 1
+    },
+    {
+        "id": "light_rain",
+        "name": "Light Rain",
+        "fireModifier": 0.8
+    },
+    {
+        "id": "heavy_rain",
+        "name": "Heavy Rain",
+        "fireModifier": 0.5
+    },
+    {
+        "id": "snow",
+        "name": "Snow",
+        "fireModifier": 0.7
+    }
+]
