@@ -214,11 +214,14 @@ function calculate(){
 
 
     const shots =
+    Math.max(
+        1,
         Number(
             document.getElementById(
                 "shots"
             ).value
-        );
+        )
+    );
 
 
 
