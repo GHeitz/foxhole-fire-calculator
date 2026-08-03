@@ -186,3 +186,54 @@ footer {
     font-weight:bold;
 
 }
+/* Navigation */
+
+
+.navbar {
+
+    background:#1a1a1a;
+
+    padding:15px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    border-bottom:
+    2px solid #ff7b00;
+
+}
+
+
+
+.logo {
+
+    color:#ff8c00;
+
+    font-weight:bold;
+
+    font-size:18px;
+
+}
+
+
+
+.nav-links a {
+
+    color:#ddd;
+
+    text-decoration:none;
+
+    margin-left:20px;
+
+}
+
+
+
+.nav-links a:hover {
+
+    color:#ff8c00;
+
+}
