@@ -4,6 +4,9 @@
         "name": "Flamethrower",
         "type": "infantry",
         "fireStack": 0.075,
+        "shotsPerMinute": 30,
+        "reloadTime": 2,
+        "playersRequired": 1,
         "source": "community testing"
     },
     {
@@ -11,6 +14,9 @@
         "name": "Vehicle Flamethrower",
         "type": "vehicle",
         "fireStack": 0.20,
+        "shotsPerMinute": 45,
+        "reloadTime": 1.5,
+        "playersRequired": 2,
         "source": "community testing"
     },
     {
@@ -18,6 +24,9 @@
         "name": "Heavy Flamethrower",
         "type": "vehicle",
         "fireStack": 0.60,
+        "shotsPerMinute": 20,
+        "reloadTime": 3,
+        "playersRequired": 3,
         "source": "community testing"
     },
     {
@@ -25,6 +34,9 @@
         "name": "Incendiary Mortar Shell",
         "type": "mortar",
         "fireStack": 1.50,
+        "shotsPerMinute": 6,
+        "reloadTime": 10,
+        "playersRequired": 2,
         "source": "community testing"
     },
     {
@@ -32,6 +44,9 @@
         "name": "Incendiary Rocket",
         "type": "rocket",
         "fireStack": 3.00,
+        "shotsPerMinute": 4,
+        "reloadTime": 15,
+        "playersRequired": 3,
         "source": "community testing"
     }
 ]
