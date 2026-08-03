@@ -1,1 +1,37 @@
-
+[
+    {
+        "id": "flamethrower",
+        "name": "Flamethrower",
+        "type": "infantry",
+        "fireStack": 0.075,
+        "source": "community testing"
+    },
+    {
+        "id": "vehicle_flamethrower",
+        "name": "Vehicle Flamethrower",
+        "type": "vehicle",
+        "fireStack": 0.20,
+        "source": "community testing"
+    },
+    {
+        "id": "heavy_flamethrower",
+        "name": "Heavy Flamethrower",
+        "type": "vehicle",
+        "fireStack": 0.60,
+        "source": "community testing"
+    },
+    {
+        "id": "incendiary_mortar",
+        "name": "Incendiary Mortar Shell",
+        "type": "mortar",
+        "fireStack": 1.50,
+        "source": "community testing"
+    },
+    {
+        "id": "incendiary_rocket",
+        "name": "Incendiary Rocket",
+        "type": "rocket",
+        "fireStack": 3.00,
+        "source": "community testing"
+    }
+]
