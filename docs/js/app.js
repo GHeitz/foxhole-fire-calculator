@@ -1,6 +1,6 @@
 /**
  * Foxhole Fire Calculator
- * Application controller
+ * Application controller v0.2
  */
 
 
@@ -36,6 +36,7 @@ async function loadData() {
 
     populateMenus();
 
+
 }
 
 
@@ -54,9 +55,9 @@ function populateMenus() {
         weapon => {
 
             let option =
-            document.createElement(
-                "option"
-            );
+                document.createElement(
+                    "option"
+                );
 
 
             option.value =
@@ -86,9 +87,9 @@ function populateMenus() {
         building => {
 
             let option =
-            document.createElement(
-                "option"
-            );
+                document.createElement(
+                    "option"
+                );
 
 
             option.value =
@@ -106,13 +107,97 @@ function populateMenus() {
         }
     );
 
+}
+
+
+
+function updateFireBar(value) {
+
+
+    const bar =
+        document.getElementById(
+            "fireBar"
+        );
+
+
+    let percentage =
+        Math.min(
+            value,
+            100
+        );
+
+
+    bar.style.width =
+        percentage + "%";
+
+
+
+    if(value < 25){
+
+        bar.style.background =
+            "#2ecc71";
+
+    }
+
+    else if(value < 50){
+
+        bar.style.background =
+            "#f1c40f";
+
+    }
+
+    else if(value < 75){
+
+        bar.style.background =
+            "#e67e22";
+
+    }
+
+    else {
+
+        bar.style.background =
+            "#e74c3c";
+
+    }
 
 }
 
 
 
 
-function calculate() {
+function getFireStatus(level){
+
+
+    switch(level){
+
+
+        case "LOW":
+            return "Fire contained";
+
+
+        case "MEDIUM":
+            return "Fire developing";
+
+
+        case "HIGH":
+            return "Dangerous fire";
+
+
+        case "INFERNO":
+            return "Critical fire";
+
+
+        default:
+            return "Unknown";
+
+    }
+
+}
+
+
+
+
+function calculate(){
 
 
     const weaponId =
@@ -178,12 +263,38 @@ function calculate() {
 
 
     document.getElementById(
+        "fireResistance"
+    ).textContent =
+        (building.fireResistance * 100)
+        + "%";
+
+
+
+    document.getElementById(
         "intensity"
     ).textContent =
         result.intensity;
 
 
+
+    document.getElementById(
+        "fireStatus"
+    ).textContent =
+        getFireStatus(
+            result.intensity
+        );
+
+
+
+    updateFireBar(
+        Number(
+            result.effectiveFire
+        )
+    );
+
+
 }
+
 
 
 
