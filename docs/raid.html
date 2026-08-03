@@ -6,17 +6,22 @@
 
 <meta charset="UTF-8">
 
-<title>Raid Simulator</title>
+<title>
+Raid Simulator - Foxhole Fire Calculator
+</title>
+
 
 <link rel="stylesheet" href="css/style.css">
 
 </head>
 
 
+
 <body>
 
 
 <nav class="navbar">
+
 
 <div class="logo">
 🔥 Foxhole Fire Calculator
@@ -34,7 +39,19 @@ Fire Calculator
 Raid Simulator
 </a>
 
+
+<a href="weapons.html">
+Weapons
+</a>
+
+
+<a href="buildings.html">
+Buildings
+</a>
+
+
 </div>
+
 
 </nav>
 
@@ -43,15 +60,151 @@ Raid Simulator
 <header>
 
 <h1>
-⚔ Raid Simulator
+⚔ Tactical Raid Simulator
 </h1>
 
 <p>
-Coming soon
+Simulate an incendiary operation
 </p>
 
 </header>
 
+
+
+<main>
+
+
+<section class="card">
+
+
+<h2>
+Attack Force
+</h2>
+
+
+<label>
+Weapon
+</label>
+
+
+<select id="raidWeapon">
+</select>
+
+
+
+<label>
+Quantity
+</label>
+
+
+<input
+type="number"
+id="raidQuantity"
+value="5"
+min="1"
+>
+
+
+
+<button id="addWeapon">
+Add weapon
+</button>
+
+
+<div id="weaponList">
+
+</div>
+
+
+</section>
+
+
+
+
+<section class="card">
+
+
+<h2>
+Target
+</h2>
+
+
+<label>
+Building
+</label>
+
+
+<select id="raidBuilding">
+</select>
+
+
+
+<label>
+Duration (seconds)
+</label>
+
+
+<input
+type="number"
+id="raidDuration"
+value="120"
+>
+
+
+<button id="simulate">
+
+🔥 Simulate Raid
+
+</button>
+
+
+</section>
+
+
+
+
+<section class="card">
+
+
+<h2>
+Result
+</h2>
+
+
+<p>
+Fire Stack:
+<span id="raidFire">
+0
+</span>
+</p>
+
+
+<p>
+Effective Fire:
+<span id="raidEffective">
+0
+</span>
+</p>
+
+
+<p>
+Status:
+<span id="raidStatus">
+-
+</span>
+</p>
+
+
+</section>
+
+
+</main>
+
+
+
+<script src="js/simulation.js"></script>
+
+<script src="js/raid.js"></script>
 
 
 </body>
