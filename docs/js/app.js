@@ -12,25 +12,24 @@ let buildings = [];
 async function loadData() {
 
 
-    const weaponResponse =
-        await fetch(
-            "data/weapons.json"
-        );
+    const [
+    weaponResponse,
+    buildingResponse
+] = await Promise.all([
+
+    fetch("data/weapons.json"),
+
+    fetch("data/buildings.json")
+
+]);
 
 
-    weapons =
-        await weaponResponse.json();
+weapons =
+    await weaponResponse.json();
 
 
-
-    const buildingResponse =
-        await fetch(
-            "data/buildings.json"
-        );
-
-
-    buildings =
-        await buildingResponse.json();
+buildings =
+    await buildingResponse.json();
 
 
 
