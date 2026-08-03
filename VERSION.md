@@ -2,15 +2,39 @@
 
 ## Current version
 
-v0.1 - Initial working calculator
+v0.25 - Navigation structure completed
 
 ## Status
 
-✅ Interface working  
+✅ Fire Calculator working  
 ✅ Weapon database loaded  
 ✅ Building database loaded  
 ✅ Fire calculation engine working  
+✅ Fire visualization added  
+✅ Multi-page application structure added  
+✅ Navigation system added  
+
+## Current modules
+
+### Available
+
+🔥 Fire Calculator
+
+### In development
+
+⚔ Raid Simulator  
+🔫 Weapon Database  
+🏗 Building Database  
 
 ## Next milestone
 
-v0.2 - Improved interface and Fire Stack visualization
+v0.3 - Tactical Raid Simulator
+
+Features planned:
+
+- Multiple attacking weapons
+- Player quantities
+- Fire output over time
+- Building resistance calculation
+- Weather modifiers
+- Raid efficiency analysis
